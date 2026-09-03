@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import rituImg from '../assets/ritu.cv.jpeg'
+import rituImg from '../assets/ritu.png'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

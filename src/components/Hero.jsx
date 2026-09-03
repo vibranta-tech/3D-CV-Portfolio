@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import rituImg from '../assets/ritu.cv.jpeg'
+import rituImg from '../assets/ritu.png'
 
 export default function Hero() {
   return (
