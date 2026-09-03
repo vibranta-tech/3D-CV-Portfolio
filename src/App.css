@@ -108,6 +108,22 @@
   max-width: var(--container-max); margin: 0 auto; text-align: center;
   display: flex; flex-direction: column; align-items: center; gap: 24px;
 }
+.hero-avatar-container {
+  position: relative; width: 170px; height: 170px; margin-bottom: 8px;
+}
+.hero-avatar-glow {
+  position: absolute; inset: -6px; border-radius: 50%;
+  background: var(--gradient-hero);
+  filter: blur(16px); opacity: 0.75;
+  animation: pulseGlow 4s ease-in-out infinite alternate;
+}
+@keyframes pulseGlow { 0% { opacity: 0.5; filter: blur(12px); } 100% { opacity: 0.9; filter: blur(20px); } }
+.hero-avatar-img {
+  position: relative; z-index: 2; width: 100%; height: 100%;
+  border-radius: 50%; object-fit: cover; object-position: center 20%;
+  border: 3px solid var(--accent-neon);
+  box-shadow: 0 0 30px rgba(0,245,212,0.4), inset 0 0 15px rgba(108,92,231,0.5);
+}
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 6px 18px; border-radius: 50px;
@@ -210,6 +226,23 @@
 .about-text p { color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; }
 .about-intro { font-size: 1.15rem !important; color: var(--text-primary) !important; }
 .about-details { display: flex; flex-direction: column; gap: 12px; }
+.about-photo-card {
+  position: relative; border-radius: 16px; overflow: hidden;
+  border: 1px solid var(--border-active); margin-bottom: 12px;
+  box-shadow: 0 10px 30px rgba(108,92,231,0.25);
+  background: var(--bg-card);
+}
+.about-photo-img {
+  width: 100%; height: 260px; object-fit: cover; object-position: center 20%;
+  display: block; transition: transform 0.5s ease;
+}
+.about-photo-card:hover .about-photo-img { transform: scale(1.05); }
+.about-photo-tag {
+  position: absolute; bottom: 0; left: 0; width: 100%;
+  padding: 10px 16px; background: linear-gradient(0deg, rgba(3,3,8,0.95), transparent);
+  font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 2px;
+  color: var(--accent-neon); font-weight: 600;
+}
 .about-detail-card {
   display: flex; align-items: center; gap: 16px;
   padding: 16px 20px; border-radius: 12px;

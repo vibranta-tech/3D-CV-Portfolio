@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import rituImg from '../assets/ritu.cv.jpeg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -59,6 +60,10 @@ export default function About() {
             variants={fadeUp}
             custom={2}
           >
+            <div className="about-photo-card">
+              <img src={rituImg} alt="Rituraj Kumar Rajput Profile" className="about-photo-img" />
+              <div className="about-photo-tag">RITURAJ KUMAR SINGH</div>
+            </div>
             <div className="about-detail-card">
               <div className="detail-icon">📍</div>
               <div>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import rituImg from '../assets/ritu.cv.jpeg'
 
 export default function Hero() {
   return (
@@ -6,6 +7,16 @@ export default function Hero() {
       <div className="hero-bg-grid"></div>
       
       <div className="hero-content">
+        <motion.div
+          className="hero-avatar-container"
+          initial={{ scale: 0, rotate: -10 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ delay: 0.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className="hero-avatar-glow"></div>
+          <img src={rituImg} alt="Rituraj Kumar Rajput" className="hero-avatar-img" />
+        </motion.div>
+
         <motion.div
           className="hero-badge"
           initial={{ opacity: 0, scale: 0.5 }}
