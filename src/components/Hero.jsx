@@ -45,7 +45,7 @@ export default function Hero() {
         >
           <span className="hero-line"></span>
           <h2 className="hero-title">
-            CSE Student • COO @ Vibranta • Backend Developer
+            CSE Student • COO @ <a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link">Vibranta</a> • Backend Developer
           </h2>
           <span className="hero-line"></span>
         </motion.div>
@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="hero-stat-divider"></div>
           <div className="hero-stat">
             <span className="hero-stat-number">COO</span>
-            <span className="hero-stat-label">@ Vibranta</span>
+            <span className="hero-stat-label">@ <a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link">Vibranta</a></span>
           </div>
           <div className="hero-stat-divider"></div>
           <div className="hero-stat">

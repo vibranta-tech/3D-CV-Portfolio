@@ -456,3 +456,17 @@
   .hero-title-row { flex-direction: column; gap: 10px; }
   .hero-line { display: none; }
 }
+
+/* ============ VIBRANTA LINK ============ */
+.vibranta-link {
+  color: var(--accent-neon);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(0, 245, 212, 0.4);
+  transition: all 0.3s ease;
+}
+.vibranta-link:hover {
+  color: #ffffff;
+  text-decoration-color: var(--accent-neon);
+  text-shadow: 0 0 10px rgba(0, 245, 212, 0.8);
+}

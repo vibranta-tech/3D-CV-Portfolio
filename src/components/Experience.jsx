@@ -69,7 +69,11 @@ export default function Experience() {
                 <div className="timeline-header">
                   <div>
                     <h3 className="timeline-title">{exp.title}</h3>
-                    <span className="timeline-company">{exp.company}</span>
+                    <span className="timeline-company">
+                      {exp.company === 'Vibranta' ? (
+                        <a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link">Vibranta</a>
+                      ) : exp.company}
+                    </span>
                   </div>
                   <span className="timeline-period">{exp.period}</span>
                 </div>
@@ -114,7 +118,11 @@ export default function Experience() {
               whileHover={{ y: -8, scale: 1.02, boxShadow: '0 20px 40px rgba(108, 92, 231, 0.2)' }}
             >
               <span className="achievement-icon">{ach.icon}</span>
-              <h4 className="achievement-title">{ach.title}</h4>
+              <h4 className="achievement-title">
+                {ach.title.includes('Vibranta') ? (
+                  <>Leadership — <a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link">Vibranta</a></>
+                ) : ach.title}
+              </h4>
               <p className="achievement-desc">{ach.description}</p>
               <span className="achievement-period">{ach.period}</span>
             </motion.div>

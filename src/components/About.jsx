@@ -42,7 +42,7 @@ export default function About() {
               I specialize in architecting software solutions with precision and tactical problem-solving.
             </p>
             <p>
-              As the <span className="text-accent-neon">Chief Operating Officer</span> at Vibranta, I led a 90+ member
+              As the <span className="text-accent-neon">Chief Operating Officer</span> at <a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link text-accent-neon">Vibranta</a>, I led a 90+ member
               team, managing coordinators across organizational operations and event execution. I progressed from
               HR to COO, demonstrating strong leadership and organizational capabilities.
             </p>
@@ -82,7 +82,7 @@ export default function About() {
               <div className="detail-icon">💼</div>
               <div>
                 <span className="detail-label">Role</span>
-                <span className="detail-value">COO @ Vibranta</span>
+                <span className="detail-value">COO @ <a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link">Vibranta</a></span>
               </div>
             </div>
             <div className="about-detail-card">

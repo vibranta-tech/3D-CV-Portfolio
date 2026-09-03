@@ -100,7 +100,11 @@ export default function Projects() {
                 )}
               </div>
 
-              <h3 className="project-title">{project.title}</h3>
+              <h3 className="project-title">
+                {project.title.startsWith('Vibranta') ? (
+                  <><a href="https://vibranta.in" target="_blank" rel="noopener noreferrer" className="vibranta-link">Vibranta</a> — HR Recruitment & Interview Management System</>
+                ) : project.title}
+              </h3>
               <span className="project-role" style={{ color: project.color }}>{project.role} • {project.year}</span>
 
               <ul className="project-desc-list">
